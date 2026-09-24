@@ -185,7 +185,7 @@
 </style>
 
 <div class="companion-banner">
-  A companion to <a href="https://github.com/darkstardevx/wraithflow" target="_blank" rel="noopener">WraithFlow</a> — not a standalone proxy. Requires WraithFlow's <code>capture_log</code> enabled.
+  A companion to <a href="https://github.com/cybercore-tech/wraithflow" target="_blank" rel="noopener">WraithFlow</a> — not a standalone proxy. Requires WraithFlow's <code>capture_log</code> enabled.
 </div>
 
 <nav>
@@ -197,7 +197,7 @@
     <div class="navlinks">
       <a class="navlink" href="#browse">Browse</a>
       <a class="navlink" href="#install">Install</a>
-      <a class="navlink btn btn-ghost" style="padding:7px 15px;font-size:13px;" href="https://github.com/darkstardevx/echo" target="_blank" rel="noopener">GitHub</a>
+      <a class="navlink btn btn-ghost" style="padding:7px 15px;font-size:13px;" href="https://github.com/cybercore-tech/echo" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
 </nav>
@@ -215,7 +215,7 @@
       <p class="hero-sub">WraithFlow captures traffic — but until now, it only ever went to stdout, which under systemd means <code>journalctl</code> and nothing else. Echo tails WraithFlow's <code>capture_log</code> and gives you an actual flow list: scroll, filter, inspect, follow live or pause to browse history.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="#install">Install Echo</a>
-        <a class="btn btn-ghost" href="https://github.com/darkstardevx/wraithflow" target="_blank" rel="noopener">Get WraithFlow first →</a>
+        <a class="btn btn-ghost" href="https://github.com/cybercore-tech/wraithflow" target="_blank" rel="noopener">Get WraithFlow first →</a>
       </div>
     </div>
     <div class="ripple-visual">
@@ -314,7 +314,7 @@
       </div>
       <div class="cmd-row">
         <span class="prompt">&gt;_</span>
-        <code id="ec-cmd" class="mono">curl -fsSL https://raw.githubusercontent.com/darkstardevx/echo/main/install.sh | sh</code>
+        <code id="ec-cmd" class="mono">curl -fsSL https://raw.githubusercontent.com/cybercore-tech/echo/main/install.sh | sh</code>
         <button class="copy-btn" onclick="ecCopy(this)" aria-label="Copy command">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
         </button>
@@ -323,7 +323,7 @@
     </div>
     <p class="dl-count" id="dl-count">&hellip;</p>
     <div class="install-more">
-      <a href="https://github.com/darkstardevx/echo#usage" target="_blank" rel="noopener">More install options &amp; manual builds →</a>
+      <a href="https://github.com/cybercore-tech/echo#usage" target="_blank" rel="noopener">More install options &amp; manual builds →</a>
     </div>
   </div>
 </section>
@@ -335,8 +335,8 @@
       <span>Echo &middot; MIT licensed &middot; a WraithFlow companion</span>
     </div>
     <div class="foot-links">
-      <a href="https://github.com/darkstardevx/echo" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://github.com/darkstardevx/wraithflow" target="_blank" rel="noopener">WraithFlow</a>
+      <a href="https://github.com/cybercore-tech/echo" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/cybercore-tech/wraithflow" target="_blank" rel="noopener">WraithFlow</a>
       <a href="#install">Install</a>
     </div>
     <div class="foot-family">Cybercore family</div>
@@ -345,8 +345,8 @@
 
 <script>
   const CMDS = {
-    linux: 'curl -fsSL https://raw.githubusercontent.com/darkstardevx/echo/main/install.sh | sh',
-    macos: 'curl -fsSL https://raw.githubusercontent.com/darkstardevx/echo/main/install.sh | sh'
+    linux: 'curl -fsSL https://raw.githubusercontent.com/cybercore-tech/echo/main/install.sh | sh',
+    macos: 'curl -fsSL https://raw.githubusercontent.com/cybercore-tech/echo/main/install.sh | sh'
   };
   function ecSetOs(os) {
     document.querySelectorAll('.os-tab').forEach(t => t.classList.toggle('active', t.dataset.os === os));
@@ -361,7 +361,7 @@
   }
   try { if (/Mac OS X|Macintosh/.test(navigator.userAgent)) ecSetOs('macos'); } catch (e) {}
 
-  fetch('https://api.github.com/repos/darkstardevx/echo/releases/latest', { headers: { Accept: 'application/vnd.github+json' } })
+  fetch('https://api.github.com/repos/cybercore-tech/echo/releases/latest', { headers: { Accept: 'application/vnd.github+json' } })
     .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(rel => {
       const dl = (rel.assets || [])

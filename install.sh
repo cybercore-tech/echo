@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # Install Echo (wf-echo) from the latest GitHub release.
 #
-#   curl -fsSL https://raw.githubusercontent.com/darkstardevx/echo/main/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/cybercore-tech/echo/main/install.sh | sh
 #
 # Supported: Linux (x86_64, aarch64) and macOS (x86_64, aarch64).
 set -eu
 
-REPO="darkstardevx/echo"
+REPO="cybercore-tech/echo"
 INSTALL_DIR="${ECHO_INSTALL_DIR:-$HOME/.local/bin}"
 
 die() {
