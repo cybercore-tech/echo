@@ -3,15 +3,15 @@
 </p>
 
 <p align="center">
-  <a href="https://darkstardevx.github.io/echo/">Site →</a>
+  <a href="https://cybercore-tech.github.io/echo/">Site →</a>
 </p>
 
-[![CI](https://github.com/darkstardevx/echo/actions/workflows/ci.yml/badge.svg)](https://github.com/darkstardevx/echo/actions/workflows/ci.yml)
-[![Release](https://github.com/darkstardevx/echo/actions/workflows/release.yml/badge.svg)](https://github.com/darkstardevx/echo/actions/workflows/release.yml)
+[![CI](https://github.com/cybercore-tech/echo/actions/workflows/ci.yml/badge.svg)](https://github.com/cybercore-tech/echo/actions/workflows/ci.yml)
+[![Release](https://github.com/cybercore-tech/echo/actions/workflows/release.yml/badge.svg)](https://github.com/cybercore-tech/echo/actions/workflows/release.yml)
 
-> A companion to [WraithFlow](https://github.com/darkstardevx/wraithflow) — not a standalone proxy.
+> A companion to [WraithFlow](https://github.com/cybercore-tech/wraithflow) — not a standalone proxy.
 
-Traffic inspector TUI — browses [WraithFlow](https://github.com/darkstardevx/wraithflow)'s
+Traffic inspector TUI — browses [WraithFlow](https://github.com/cybercore-tech/wraithflow)'s
 captured traffic. Installed binary: `wf-echo` (not `echo` — that would shadow
 the real shell builtin/coreutil for anything that bypasses bash's own
 builtin resolution).
@@ -19,7 +19,7 @@ builtin resolution).
 ## 📦 Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/darkstardevx/echo/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/cybercore-tech/echo/main/install.sh | sh
 ```
 
 Downloads the latest release for your platform (Linux or macOS, x86_64
